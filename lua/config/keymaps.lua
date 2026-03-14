@@ -7,3 +7,9 @@ vim.keymap.set("n", "<leader>oi", function()
     apply = true,
   })
 end)
+
+vim.keymap.set("i", "<C-h>", "<Esc><C-w>h")
+vim.keymap.set("i", "<C-j>", "<Esc><C-w>j")
+vim.keymap.set("i", "<C-k>", "<Esc><C-w>k")
+vim.keymap.set("i", "<C-l>", "<Esc><C-w>l")
+vim.keymap.set("n", "<leader>rM", [[:%s/\r//ge<CR>``]], { desc = "Remove ^M characters" })
